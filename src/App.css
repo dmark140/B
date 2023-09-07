@@ -1,0 +1,46 @@
+ body{
+  background-color: black;
+ }
+.main{
+  width: 500px;
+  margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding-left: 10px;
+      padding-right: 10px;
+}
+.profile{
+  height: 85px;
+  width:  85px;
+  border-radius: 100px;
+  filter: contrast(115%);
+  margin-right: 15px;
+}
+
+.hghasdx{
+  
+  align-items: center;
+}
+
+.text-Regular {
+  color: white;
+  font-family: "SFPro";
+  font-weight: 100;
+  letter-spacing: 0.02cm;
+}
+.text-PreMute {
+  color: white;
+  opacity: 0.8;
+  font-family: "SFPro";
+  font-weight: 100;
+  letter-spacing: 0.02cm;
+}
+
+.text-Mute {
+  color: white;
+  opacity: 0.5;
+  font-family: "SFPro";
+  font-weight: 100;
+  letter-spacing: 0.02cm;
+}
+
