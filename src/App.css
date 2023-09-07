@@ -12,7 +12,7 @@
 .profile{
   height: 85px;
   width:  85px;
-  border-radius: 100px;
+  border-radius: 10px;
   filter: contrast(115%);
   margin-right: 15px;
 }
@@ -44,3 +44,20 @@
   letter-spacing: 0.02cm;
 }
 
+.Mute {
+  color: white;
+  opacity: 0.5;
+}
+.PreMute {
+  color: white;
+  opacity: 0.8;
+}
+
+
+.icon{
+  color: white;
+    opacity: 0.8;
+  --tw-scale-x: .75;
+    --tw-scale-y: .75;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
