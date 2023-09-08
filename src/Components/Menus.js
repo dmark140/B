@@ -1,12 +1,4 @@
-import {
-  Home,
-  Inventory,
-  LinkOff,
-  LinkRounded,
-  NorthEast,
-  Work,
-} from "@mui/icons-material";
-import { Link } from "@mui/material";
+import { Home, Inventory, NorthEast, Work } from "@mui/icons-material";
 import React from "react";
 
 export default function Menus() {

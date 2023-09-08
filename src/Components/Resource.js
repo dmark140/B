@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarMonth, NorthEast } from "@mui/icons-material";
+import { ArrowRight, NorthEast } from "@mui/icons-material";
 import React from "react";
 
 export default function Resource() {
