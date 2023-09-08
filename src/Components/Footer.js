@@ -1,0 +1,51 @@
+import { Facebook, GitHub, LinkedIn, NorthEast } from "@mui/icons-material";
+import React from "react";
+
+export default function Footer() {
+  const Comp = [
+    {
+      icon: GitHub,
+      title: "GitHub",
+      link: "https://github.com/dmark140",
+      linkLabel: "github.com/dmark140",
+    },
+    {
+      icon: Facebook,
+      title: "FaceBook",
+      link: "#",
+      linkLabel: "CodeWithDean",
+    },
+    {
+      icon: LinkedIn,
+      title: "LinkedIn",
+      link: "https://linkedin.com/in/dfamoleras",
+      linkLabel: "dfamoleras",
+    },
+  ];
+
+  return (
+    <div>
+      <div className=" mt-20 ">
+        <p className="text-Regular mb-2" id="link">
+          Links
+        </p>
+        {Comp.map((item, index) => (
+          <div className="flex " id={index}>
+            <span className="flex items-center">
+              <item.icon className="text-white scale-75" />
+              <p className="text-Mute mr-10 w-20">{item.title}</p>
+            </span>
+            <a
+              target="_blank"
+              className="text-Regular HAQXSA text-white"
+              href={item.link}
+            >
+              {item.linkLabel}
+            </a>
+            <NorthEast className="text-white scale-75 font-bold" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
