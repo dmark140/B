@@ -36,7 +36,7 @@ export default function Footer() {
               <p className="text-Mute mr-10 w-20">{item.title}</p>
             </span>
             <a
-              target="_blank"
+              // target="_blank"
               className="text-Regular HAQXSA text-white"
               href={item.link}
             >

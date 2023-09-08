@@ -11,7 +11,7 @@ export default function WorkExpComp(p) {
           <p className="ml-2 text-Regular ">{p.title}</p>
           <a
             href={p.compLink}
-            target="_Blank"
+            // target="_Blank"
             className="ml-2 text-PreMute HAQXSA text-sm"
           >
             {p.comp}
