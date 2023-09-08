@@ -6,8 +6,8 @@ export default function WorkExp() {
     {
       year: "2020 - Present",
       title: "SAP Administrator | Database Administrator",
-      compLink: "https://www.innovativepkg.com.ph/",
-      comp: "innovative packaging ind. corp. | Valenzuela Main",
+      compLink: "https://www.Innovativepkg.com.ph/",
+      comp: "Innovative packaging ind. corp. | Valenzuela Main",
       disc: "Deliver high-quality, robust production code for a diverse array of projects for the company and other branches, including automation of users recurring tasks, SAP B1 Add-on Module, and in-house projects. Provide mentorship, share knowledge within the MIS department [programmers], collaborate and conduct training for other departments.",
       tech: [
         { label: "ReactJs" },
@@ -25,7 +25,7 @@ export default function WorkExp() {
     {
       year: "2018 - 2020",
       title: "SAP Developer | Database Administrator",
-      compLink: "https://www.innovativepkg.com.ph/",
+      compLink: "https://www.Innovativepkg.com.ph/",
       comp: "innovative packaging ind. corp. | Valenzuela Main",
       disc: "Worked with MIS team and other departments to design Major add-on module , designs Crystal reports and query reports for top-level users.",
       tech: [
@@ -39,7 +39,7 @@ export default function WorkExp() {
       year: "2017 - 2018",
       title: "Jr. Programmer | Database Administrator",
       compLink: "https://www.innovativepkg.com.ph/",
-      comp: "innovative packaging ind. corp. | Cagayan De Oro",
+      comp: "Innovative packaging ind. corp. | Cagayan De Oro",
       disc: "Collaborates with Lead Branch Programmer,Developed, maintained and dispached producction code on In-house applicatiion.",
       tech: [{ label: "VB6" }, { label: "MySQL" }, { label: "PHP" }],
     },
@@ -47,9 +47,9 @@ export default function WorkExp() {
 
   return (
     <div className="mt-10" id="exp">
-      <p className="text-Regular w-40">Work Experience</p>
+      <p className="text-Regular w-40 mb-4">Work Experience</p>
       {WorkExpArray.map((item, i) => (
-        <>
+        <div className="mb-4">
           <WorkExpComp
             year={item.year}
             title={item.title}
@@ -58,7 +58,7 @@ export default function WorkExp() {
             comp={item.comp}
             compLink={item.compLink}
           />
-        </>
+        </div>
       ))}
     </div>
   );
