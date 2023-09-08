@@ -8,7 +8,7 @@ export default function WorkExp() {
       title: "SAP Administrator | Database Administrator",
       compLink: "https://www.Innovativepkg.com.ph/",
       comp: "Innovative packaging ind. corp. | Valenzuela Main",
-      disc: "Deliver high-quality, robust production code for a diverse array of projects for the company and other branches, including automation of users recurring tasks, SAP B1 Add-on Module, and in-house projects. Provide mentorship, share knowledge within the MIS department [programmers], collaborate and conduct training for other departments.",
+      disc: "Deliver high-quality, robust production code for a diverse array of projects for the company, including automation of user's recurring tasks, SAP B1 Add-on Module, and in-house projects. Provide mentorship, share knowledge within the MIS department, collaborate and conduct training for other departments.",
       tech: [
         { label: "ReactJs" },
         { label: "Node" },
@@ -39,7 +39,7 @@ export default function WorkExp() {
       year: "2017 - 2018",
       title: "Jr. Programmer | Database Administrator",
       compLink: "https://www.innovativepkg.com.ph/",
-      comp: "Innovative packaging ind. corp. | Cagayan De Oro",
+      comp: "Innovative packaging ind. corp. | CDO",
       disc: "Collaborates with Lead Branch Programmer,Developed, maintained and dispached producction code on In-house applicatiion.",
       tech: [{ label: "VB6" }, { label: "MySQL" }, { label: "PHP" }],
     },
@@ -49,7 +49,7 @@ export default function WorkExp() {
     <div className="mt-10" id="exp">
       <p className="text-Regular w-40 mb-4">Work Experience</p>
       {WorkExpArray.map((item, i) => (
-        <div className="mb-4">
+        <div className="mb-8">
           <WorkExpComp
             year={item.year}
             title={item.title}

@@ -1,9 +1,9 @@
-import { ArrowRight, NorthEast } from "@mui/icons-material";
+import { ArrowRight, NorthEast, Terminal } from "@mui/icons-material";
 import React from "react";
 import { useMediaPredicate } from "react-media-hook";
 
 export default function WorkExpComp(p) {
-  const isDesktopOrLaptop = useMediaPredicate("(min-width: 800px)");
+  const isDesktopOrLaptop = useMediaPredicate("(min-width: 400px)");
 
   return (
     <div>
@@ -21,44 +21,53 @@ export default function WorkExpComp(p) {
             >
               {p.comp}
             </a>
-            <p className="ml-2 text-Mute mt-2 ">{p.disc} </p>
-            <div className="text-Mute mt-2 ">
-              {p.tech.map((item, i) => (
-                <>
-                  <span className={"KSDAJ mx-2"}>{item.label}</span>
-                </>
-              ))}
+            <span className="flex -ml-6 my-2">
+              <ArrowRight className="text-white " />
+              <p className="ml-2 text-Mute  ">{p.disc} </p>
+            </span>
+            <div className="flex">
+              <Terminal className="text-white -ml-6 scale-75" />
+
+              <div className="text-Mute  flex flex-wrap -ml-0.5">
+                {p.tech.map((item, i) => (
+                  <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       ) : (
-        <div className={isDesktopOrLaptop && "invisible"}>
+        <div className={isDesktopOrLaptop && "invisible mb-4"}>
           <span className=" flex">
-            <p href="#" className="text-PreMute ">
+            <p href="#" className="text-Mute whitespace-nowrap">
               {p.year}{" "}
             </p>
-            <div className="text-Regular"> - {p.title}</div>
           </span>
+          <div className="text-Regular"> {p.title}</div>
           <div className="flex">
             <a
               href={p.compLink}
               // target="_Blank"
-              className="ml-2 text-PreMute HAQXSA "
+              className=" text-Regular HAQXSA text-sm "
             >
               {p.comp}
-              <NorthEast className="text-white font" />
+              <NorthEast className="text-white scale-75" />
             </a>
           </div>
-          <div className="ml-6">
-            <div className=" ">
+          <div className="">
+            <div className=" mt-2">
               <div className="text-Mute flex">
-                <ArrowRight className="text-white" />
+                <ArrowRight className="text-white -ml-6" />
                 <div>{p.disc}</div>
               </div>
-              <div className="text-Regular  flex flex-wrap ml-4">
-                {p.tech.map((item, i) => (
-                  <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
-                ))}
+              <div className="flex">
+                <Terminal className="text-white -ml-6 scale-75" />
+
+                <div className="text-Mute  flex flex-wrap -ml-2">
+                  {p.tech.map((item, i) => (
+                    <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

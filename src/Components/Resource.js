@@ -18,7 +18,7 @@ export default function Resource() {
   ];
   return (
     <>
-      <div className="mt-10 " id="PandR">
+      <div className="mt-16 " id="PandR">
         <p className="text-Regular mb-4 ">Projects & Resources</p>
 
         {comp.map((item, index) => (

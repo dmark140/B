@@ -14,7 +14,6 @@ body{
   max-width: 500px;
   margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
     padding-left: 10px;
       padding-right: 10px;
 }
@@ -120,7 +119,29 @@ body{
       margin-top: -18px;
       z-index: -1; 
       height: 20px;
-      border-left: 5px solid white;
-      border-bottom: 5px solid white;
+      border-left: 5px solid yellow;
+      border-bottom: 5px solid yellow;
 
+}
+
+
+ 
+.fadeIn {
+  /* background-color: black; */
+
+  -webkit-animation: flicker-in-1 2s linear both;
+  animation: flicker-in-1 2s linear both;
+}
+
+@keyframes flicker-in-1 {
+  0% {
+    background-color:  rgba(0, 0, 0, 1);
+  }
+  90%{
+      background-color:  rgba(0, 0, 0,1);
+  }
+  100% {
+      background-color:  rgba(0, 0, 0, 0);
+      visibility: hidden;
+  }
 }
