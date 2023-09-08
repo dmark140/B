@@ -10,7 +10,7 @@ export default function Menus() {
     },
     {
       icon: Work,
-      label: "Work Experience",
+      label: "Experience",
       link: "#exp",
     },
     {
@@ -29,7 +29,7 @@ export default function Menus() {
     <div>
       <div className="my-2 gap-2 flex absolute ml-2">
         {comp.map((item, index) => (
-          <div key={index} className="mr-2">
+          <div key={index} className="mr-2 whitespace-nowrap">
             <a href={item.link} className=" HAQXSA">
               <span>
                 <item.icon className="text-white scale-75 -mt-0.5" />
