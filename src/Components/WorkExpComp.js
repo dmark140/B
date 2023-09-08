@@ -3,7 +3,7 @@ import React from "react";
 import { useMediaPredicate } from "react-media-hook";
 
 export default function WorkExpComp(p) {
-  const isDesktopOrLaptop = useMediaPredicate("(min-width: 400px)");
+  const isDesktopOrLaptop = useMediaPredicate("(min-width: 500px)");
 
   return (
     <div>
