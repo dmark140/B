@@ -15,9 +15,7 @@ export default function Head() {
           <p className="text-PreMute p-0 -m-0  text-sm">
             Innovation focused Systems Admin
           </p>
-          <a href="#" className="text-Mute p-0 -m-0  text-sm">
-            @CodeWithDean
-          </a>
+          <p className="text-Mute p-0 -m-0  text-sm">@CodeWithDean</p>
         </div>
       </div>
       {/* <div className="flex gap-x-2">
