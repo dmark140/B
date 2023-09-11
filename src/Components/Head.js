@@ -11,7 +11,7 @@ export default function Head() {
           />
         </div>
         <div>
-          <p className="text-Regular p-0 -m-0 text-xl">Deanmark Famoleras</p>
+          <p className="text-Header p-0 -m-0 text-xl">Deanmark Famoleras</p>
           <p className="text-PreMute p-0 -m-0  text-sm">
             Innovation focused Systems Admin
           </p>

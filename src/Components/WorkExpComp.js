@@ -8,27 +8,27 @@ export default function WorkExpComp(p) {
   return (
     <div>
       {isDesktopOrLaptop ? (
-        <div className="  mt-5 GASDQ">
+        <div className=" miniFadeIn   mt-5 GASDQ">
           <div>
-            <p className=" text-Mute ">{p.year}</p>
+            <p className=" miniFadeIn  text-Mute ">{p.year}</p>
           </div>
-          <div className="ml-4">
-            <p className="ml-2 text-Regular ">{p.title}</p>
+          <div className=" miniFadeIn ml-4">
+            <p className=" miniFadeIn ml-2 text-Regular ">{p.title}</p>
             <a
               href={p.compLink}
               // target="_Blank"
-              className="ml-2 text-PreMute HAQXSA text-sm"
+              className=" miniFadeIn ml-2 text-PreMute HAQXSA text-sm"
             >
               {p.comp}
             </a>
-            <span className="flex -ml-6 my-2">
-              <ArrowRight className="text-white " />
-              <p className="ml-2 text-Mute  ">{p.disc} </p>
+            <span className=" miniFadeIn flex -ml-6 my-2">
+              <ArrowRight className=" miniFadeIn text-white " />
+              <p className=" miniFadeIn ml-2 text-Mute  ">{p.disc} </p>
             </span>
-            <div className="flex">
-              <Terminal className="text-white -ml-6 scale-75" />
+            <div className=" miniFadeIn flex">
+              <Terminal className=" miniFadeIn text-white -ml-6 scale-75" />
 
-              <div className="text-Mute  flex flex-wrap -ml-0.5">
+              <div className=" miniFadeIn text-Mute  flex flex-wrap -ml-0.5">
                 {p.tech.map((item, i) => (
                   <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
                 ))}
@@ -38,32 +38,32 @@ export default function WorkExpComp(p) {
         </div>
       ) : (
         <div className={isDesktopOrLaptop && "invisible mb-4"}>
-          <span className=" flex">
-            <p href="#" className="text-Mute whitespace-nowrap">
+          <span className=" miniFadeIn  flex">
+            <p href="#" className=" miniFadeIn text-Mute whitespace-nowrap">
               {p.year}{" "}
             </p>
           </span>
-          <div className="text-Regular"> {p.title}</div>
-          <div className="flex">
+          <div className=" miniFadeIn text-Regular"> {p.title}</div>
+          <div className=" miniFadeIn flex">
             <a
               href={p.compLink}
               // target="_Blank"
-              className=" text-Regular HAQXSA text-sm "
+              className=" miniFadeIn  text-Regular HAQXSA text-sm "
             >
               {p.comp}
-              <NorthEast className="text-white scale-75" />
+              <NorthEast className=" miniFadeIn text-white scale-75" />
             </a>
           </div>
-          <div className="">
-            <div className=" mt-2">
-              <div className="text-Mute flex">
-                <ArrowRight className="text-white -ml-6" />
+          <div className=" miniFadeIn ">
+            <div className=" miniFadeIn  mt-2">
+              <div className=" miniFadeIn text-Mute flex">
+                <ArrowRight className=" miniFadeIn text-white -ml-6" />
                 <div>{p.disc}</div>
               </div>
-              <div className="flex">
-                <Terminal className="text-white -ml-6 scale-75" />
+              <div className=" miniFadeIn flex">
+                <Terminal className=" miniFadeIn text-white -ml-6 scale-75" />
 
-                <div className="text-Mute  flex flex-wrap -ml-2">
+                <div className=" miniFadeIn text-Mute  flex flex-wrap -ml-2">
                   {p.tech.map((item, i) => (
                     <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
                   ))}

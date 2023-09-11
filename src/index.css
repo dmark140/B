@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "SFPro";
+  src: local("SFPro"),
+    url("./Fonts/SFProDisplayRegular.otf") format("OpenType");
+  /* font-weight: bold; */
+}
 
 @font-face {
-   font-family: "SFPro";
-   src: local("SFPro"),
-     url("./Fonts/SFProDisplayRegular.otf") format("OpenType");
-   /* font-weight: bold; */
- }
+  font-family: "Minecraft";
+  src: local("Minecraft"),
+    url("./Fonts/Minecraft.ttf") format("TrueType");
+  /* font-weight: bold; */
+}

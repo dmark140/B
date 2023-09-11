@@ -1,41 +1,48 @@
 import { Home, Inventory, NorthEast, Work } from "@mui/icons-material";
 import React from "react";
 
-export default function Menus() {
+export default function Menus(p) {
   const comp = [
     {
-      icon: Home,
-      label: "Home",
-      link: "#",
+      icon: Inventory,
+      label: "Experience",
+      link: "#PandR",
     },
     {
       icon: Work,
-      label: "Experience",
+      label: "Resources",
       link: "#exp",
     },
-    {
-      icon: NorthEast,
-      label: "Links",
-      link: "#link",
-    },
-    {
-      icon: Inventory,
-      label: "Resources",
-      link: "#PandR",
-    },
   ];
+  const MenuSelectionHandler = (e) => {
+    const { name } = e.target;
+    console.log(e);
+    p.setMenuId(e.target.id);
+  };
 
+  const Btn = (p) => {
+    return (
+      <>
+        <span>
+          <p.icon className="text-white scale-75 -mt-0.5" />
+        </span>
+        <span>{p.label}</span>
+      </>
+    );
+  };
   return (
     <div>
       <div className="my-2 gap-2 flex absolute ml-2">
         {comp.map((item, index) => (
           <div key={index} className="mr-2 whitespace-nowrap">
-            <a href={item.link} className=" HAQXSA">
-              <span>
-                <item.icon className="text-white scale-75 -mt-0.5" />
-              </span>
-              <span>{item.label}</span>
-            </a>
+            <button
+              id={index}
+              href={item.link}
+              className={index == p.selectedID ? " HAQXSA HAQXSAx" : " HAQXSA "}
+              onClick={MenuSelectionHandler}
+            >
+              {item.label}
+            </button>
           </div>
         ))}
       </div>

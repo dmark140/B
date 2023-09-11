@@ -47,7 +47,9 @@ export default function WorkExp() {
 
   return (
     <div className="mt-10" id="exp">
-      <p className="text-Regular w-40 mb-4">Work Experience</p>
+      <div className="miniFadeIn fixed  w-full h-full mt-1 z-50"></div>
+
+      <p className="text-Header miniFadeIn w-40 mb-4">Work Experience</p>
       {WorkExpArray.map((item, i) => (
         <div className="mb-8">
           <WorkExpComp

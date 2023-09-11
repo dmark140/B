@@ -11,11 +11,11 @@ body{
   background-color: black;
  }
 .main{
-  max-width: 500px;
-  margin-left: auto;
+    max-width: 500px;
+    margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
-      padding-right: 10px;
+    padding-right: 10px;
 }
 .profile{
   height: 85px;
@@ -28,6 +28,13 @@ body{
 .hghasdx{
   
   align-items: center;
+}
+
+.text-Header {
+  color: white;
+  font-family: "SFPro";
+  letter-spacing: 0.05cm;
+  font-weight: 500;
 }
 
 .text-Regular {
@@ -108,40 +115,73 @@ body{
       border-left: 5px solid transparent;
       border-bottom: 5px solid transparent;
 }
-.HAQXSA:hover::after{
-    /* position: absolute; */
-      display: block;
-      content: '';
-      height: 5px;
-      /* background: white; */
-      margin-left: -8px;
-        margin-right: 10px;
-      margin-top: -18px;
-      z-index: -1; 
-      height: 20px;
-      border-left: 5px solid yellow;
-      border-bottom: 5px solid yellow;
+.HAQXSA:hover::after {
+  /* position: absolute; */
+  display: block;
+  content: '';
+  height: 5px;
+  /* background: white; */
+  margin-left: -8px;
+  margin-right: 10px;
+  margin-top: -18px;
+  z-index: -1;
+  height: 20px;
+  transition: 1s;
+  border-left: 5px solid yellow;
+  border-bottom: 5px solid yellow;
+
+}
+
+.HAQXSAx::after {
+  /* position: absolute; */
+  display: block;
+  content: '';
+  height: 5px;
+  /* background: white; */
+  margin-left: -8px;
+  margin-right: 10px;
+  margin-top: -18px;
+  z-index: -1;
+  height: 20px;
+  transition: 1s;
+  border-left: 5px solid yellow;
+  border-bottom: 5px solid yellow;
 
 }
 
 
- 
-.fadeIn {
-  /* background-color: black; */
+ .fadeIn {
+   /* background-color: black; */
 
-  -webkit-animation: flicker-in-1 2s linear both;
-  animation: flicker-in-1 2s linear both;
-}
-
+   -webkit-animation: flicker-in-1 2s linear both;
+   animation: flicker-in-1 2s linear both;
+ }
 @keyframes flicker-in-1 {
   0% {
-    background-color:  rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
   }
-  90%{
-      background-color:  rgba(0, 0, 0,1);
+
+  90% {
+    background-color: rgba(0, 0, 0, 1);
   }
+
   100% {
-      background-color:  rgba(0, 0, 0, 0);
-      visibility: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+  }
+}
+ .miniFadeIn {
+   -webkit-animation: miniFade 0.5s linear both;
+   animation: miniFade 0.5s linear both;
+ }
+
+@keyframes miniFade {
+  0% {
+      color: transparent;
+  }
+ 
+  100% {
+    color: white
+     
   }
 }
