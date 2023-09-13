@@ -31,20 +31,20 @@ body{
 }
 
 .text-Header {
-  color: white;
+  /* color: white; */
   font-family: "SFPro";
   letter-spacing: 0.05cm;
   font-weight: 500;
 }
 
 .text-Regular {
-  color: white;
+  /* color: white; */
   font-family: "SFPro";
   font-weight: 100;
   letter-spacing: 0.02cm;
 }
 .text-PreMute {
-  color: white;
+  /* color: white; */
   opacity: 0.8;
   font-family: "SFPro";
   font-weight: 100;
@@ -52,7 +52,7 @@ body{
 }
 
 .text-Mute {
-  color: white;
+  /* color: white; */
   opacity: 0.5;
   font-family: "SFPro";
   font-weight: 100;
@@ -60,17 +60,17 @@ body{
 }
 
 .Mute {
-  color: white;
+  /* color: white; */
   opacity: 0.5;
 }
 .PreMute {
-  color: white;
+  /* color: white; */
   opacity: 0.8;
 }
 
 
 .icon{
-  color: white;
+  /* color: white; */
     opacity: 0.8;
   --tw-scale-x: .75;
     --tw-scale-y: .75;
@@ -95,7 +95,7 @@ body{
     font-family: "SFPro";
     font-weight: 100;
     letter-spacing: 0.02cm;
-    color: white;
+    /* color: white; */
     z-index: 1;
     opacity: 0.8;
     transition: 0.5s;
@@ -170,7 +170,7 @@ body{
     visibility: hidden;
   }
 }
- .miniFadeIn {
+ /* .miniFadeIn {
    -webkit-animation: miniFade 0.5s linear both;
    animation: miniFade 0.5s linear both;
  }
@@ -181,7 +181,48 @@ body{
   }
  
   100% {
-    color: white
+    color: rgba(0, 0, 0, 1)
      
   }
+} */
+.DSAXA {
+  height: 24px;
+  width: 24px;
+  background-color: yellow;
+  margin-top: 1px;
+  position: absolute;
+  color: transparent;
+  border-radius: 9999px;
+}
+.DASD {
+  animation: transToLeft 0.5s cubic-bezier(0.79, 0.11, 0.01, 1) both;
+}.DASX {
+  transform: translatex(0%);
+  animation: transToRight 0.5s cubic-bezier(0.79, 0.11, 0.01, 1) both;
+} 
+ 
+@keyframes transToLeft {
+  0% {
+    transform: translatex(0%);
+  }
+
+  100% {
+    transform: translatex(100%);
+  }
+}
+
+@keyframes transToRight {
+  0% {
+    transform: translatex(100%);
+  }
+
+  100% {
+    transform: translatex(0%);
+  }
+}
+
+
+
+.KJAS{
+  animation:""
 }

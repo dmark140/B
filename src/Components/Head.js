@@ -11,11 +11,15 @@ export default function Head() {
           />
         </div>
         <div>
-          <p className="text-Header p-0 -m-0 text-xl">Deanmark Famoleras</p>
-          <p className="text-PreMute p-0 -m-0  text-sm">
+          <p className="text-Header  text-white dark:text-black p-0 -m-0 text-xl">
+            Deanmark Famoleras
+          </p>
+          <p className="text-PreMute text-white dark:text-black p-0 -m-0  text-sm">
             Innovation focused Systems Admin
           </p>
-          <p className="text-Mute p-0 -m-0  text-sm">@CodeWithDean</p>
+          <p className="text-Mute  text-white dark:text-black p-0 -m-0  text-sm">
+            @CodeWithDean
+          </p>
         </div>
       </div>
       {/* <div className="flex gap-x-2">

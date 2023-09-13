@@ -8,27 +8,33 @@ export default function WorkExpComp(p) {
   return (
     <div>
       {isDesktopOrLaptop ? (
-        <div className=" miniFadeIn   mt-5 GASDQ">
+        <div className=" miniFadeIn text-white dark:text-black   mt-5 GASDQ">
           <div>
-            <p className=" miniFadeIn  text-Mute ">{p.year}</p>
+            <p className=" miniFadeIn text-white dark:text-black  text-Mute ">
+              {p.year}
+            </p>
           </div>
-          <div className=" miniFadeIn ml-4">
-            <p className=" miniFadeIn ml-2 text-Regular ">{p.title}</p>
+          <div className=" miniFadeIn text-white dark:text-black ml-4">
+            <p className=" miniFadeIn text-white dark:text-black ml-2 text-Regular ">
+              {p.title}
+            </p>
             <a
               href={p.compLink}
               // target="_Blank"
-              className=" miniFadeIn ml-2 text-PreMute HAQXSA text-sm"
+              className=" miniFadeIn text-white dark:text-black ml-2 text-PreMute HAQXSA text-sm"
             >
               {p.comp}
             </a>
-            <span className=" miniFadeIn flex -ml-6 my-2">
-              <ArrowRight className=" miniFadeIn text-white " />
-              <p className=" miniFadeIn ml-2 text-Mute  ">{p.disc} </p>
+            <span className=" miniFadeIn text-white dark:text-black flex -ml-6 my-2">
+              <ArrowRight className=" miniFadeIn  dark:text-black text-white " />
+              <p className=" miniFadeIn text-white dark:text-black ml-2 text-Mute  ">
+                {p.disc}{" "}
+              </p>
             </span>
-            <div className=" miniFadeIn flex">
-              <Terminal className=" miniFadeIn text-white -ml-6 scale-75" />
+            <div className=" miniFadeIn text-white dark:text-black flex">
+              <Terminal className=" miniFadeIn  dark:text-black text-white -ml-6 scale-75" />
 
-              <div className=" miniFadeIn text-Mute  flex flex-wrap -ml-2">
+              <div className=" miniFadeIn text-white dark:text-black text-Mute  flex flex-wrap -ml-2">
                 {p.tech.map((item, i) => (
                   <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
                 ))}
@@ -38,32 +44,38 @@ export default function WorkExpComp(p) {
         </div>
       ) : (
         <div className={isDesktopOrLaptop && "invisible mb-4"}>
-          <span className=" miniFadeIn  flex">
-            <p href="#" className=" miniFadeIn text-Mute whitespace-nowrap">
+          <span className=" miniFadeIn text-white dark:text-black  flex">
+            <p
+              href="#"
+              className=" miniFadeIn text-white dark:text-black text-Mute whitespace-nowrap"
+            >
               {p.year}{" "}
             </p>
           </span>
-          <div className=" miniFadeIn text-Regular"> {p.title}</div>
-          <div className=" miniFadeIn flex">
+          <div className=" miniFadeIn text-white dark:text-black text-Regular">
+            {" "}
+            {p.title}
+          </div>
+          <div className=" miniFadeIn text-white dark:text-black flex">
             <a
               href={p.compLink}
               // target="_Blank"
-              className=" miniFadeIn  text-Regular HAQXSA text-sm "
+              className=" miniFadeIn text-white dark:text-black  text-Regular HAQXSA text-sm "
             >
               {p.comp}
-              <NorthEast className=" miniFadeIn text-white scale-75" />
+              <NorthEast className=" miniFadeIn  dark:text-black text-white scale-75" />
             </a>
           </div>
-          <div className=" miniFadeIn ">
-            <div className=" miniFadeIn  mt-2">
-              <div className=" miniFadeIn text-Mute flex">
-                <ArrowRight className=" miniFadeIn text-white -ml-6" />
+          <div className=" miniFadeIn text-white dark:text-black ">
+            <div className=" miniFadeIn text-white dark:text-black  mt-2">
+              <div className=" miniFadeIn text-white dark:text-black text-Mute flex">
+                <ArrowRight className=" miniFadeIn   dark:text-black text-white -ml-6" />
                 <div>{p.disc}</div>
               </div>
-              <div className=" miniFadeIn flex">
-                <Terminal className=" miniFadeIn text-white -ml-6 scale-75" />
+              <div className=" miniFadeIn text-white dark:text-black flex">
+                <Terminal className=" miniFadeIn   dark:text-black text-white -ml-6 scale-75" />
 
-                <div className=" miniFadeIn text-Mute  flex flex-wrap -ml-2">
+                <div className=" miniFadeIn text-white dark:text-black text-Mute  flex flex-wrap -ml-2">
                   {p.tech.map((item, i) => (
                     <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
                   ))}

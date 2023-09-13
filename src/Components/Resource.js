@@ -23,22 +23,27 @@ export default function Resource() {
   ];
   return (
     <>
-      <div className=" miniFadeIn " id="PandR">
-        <p className="miniFadeIn text-Header mb-4  ">Projects & Resources</p>
+      <div className=" miniFadeIn    text-white dark:text-black  " id="PandR">
+        <p className="miniFadeIn    text-white dark:text-black  text-Header mb-4  ">
+          Projects & Resources
+        </p>
 
         {comp.map((item, index) => (
           <>
             <div className="mb-4">
               <span className=" flex">
-                <a href="#" className="miniFadeIn text-Regular HAQXSA  w-fit">
+                <a
+                  href="#"
+                  className="miniFadeIn    text-white dark:text-black  text-Regular HAQXSA  w-fit"
+                >
                   {item.title}
                 </a>
-                <NorthEast className="miniFadeIn text-white scale-75 font-bold" />
+                <NorthEast className="miniFadeIn      text-white dark:text-black  scale-75 font-bold" />
               </span>
 
               <div className="ml-6">
-                <div className="miniFadeIn text-Mute flex">
-                  <ArrowRight className="miniFadeIn text-white" />
+                <div className="miniFadeIn    text-white dark:text-black  text-Mute flex">
+                  <ArrowRight className="miniFadeIn     text-white dark:text-black  " />
                   <div>{item.description}</div>
                 </div>
               </div>

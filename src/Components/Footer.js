@@ -39,23 +39,28 @@ export default function Footer() {
   return (
     <div>
       <div className=" mt-20 ">
-        <p className="miniFadeIn text-Regular mb-2" id="link">
+        <p
+          className="miniFadeIn text-white dark:text-black   text-Regular mb-2"
+          id="link"
+        >
           Links
         </p>
         {Comp.map((item, index) => (
           <div className="flex " id={index}>
             <span className="flex items-center">
-              <item.icon className="miniFadeIn text-white scale-75" />
-              <p className="miniFadeIn text-Mute mr-10 w-20">{item.title}</p>
+              <item.icon className="miniFadeIn text-white dark:text-black   scale-75" />
+              <p className="miniFadeIn text-white dark:text-black   text-Mute mr-10 w-20">
+                {item.title}
+              </p>
             </span>
             <a
               // target="_blank"
-              className="miniFadeIn text-Regular HAQXSA miniFadeIn text-white"
+              className="miniFadeIn text-white dark:text-black   text-Regular HAQXSA miniFadeIn  "
               href={item.link}
             >
               {item.linkLabel}
             </a>
-            <NorthEast className="miniFadeIn text-white scale-75 font-bold" />
+            <NorthEast className="miniFadeIn text-white dark:text-black   scale-75 font-bold" />
           </div>
         ))}
       </div>

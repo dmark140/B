@@ -24,7 +24,7 @@ export default function Menus(p) {
     return (
       <>
         <span>
-          <p.icon className="text-white scale-75 -mt-0.5" />
+          <p.icon className="  scale-75 -mt-0.5" />
         </span>
         <span>{p.label}</span>
       </>
@@ -40,8 +40,8 @@ export default function Menus(p) {
               href={item.link}
               className={
                 index == p.selectedID
-                  ? "  HAQXSA   HAQXSAx dark:text-white bg-transparent"
-                  : "  HAQXSA dark:text-white bg-transparent "
+                  ? "  HAQXSA   HAQXSAx  text-white dark:text-black bg-transparent"
+                  : "  HAQXSA  text-white dark:text-black bg-transparent "
               }
               onClick={MenuSelectionHandler}
             >
