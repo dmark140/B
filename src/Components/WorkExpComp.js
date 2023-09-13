@@ -28,7 +28,7 @@ export default function WorkExpComp(p) {
             <div className=" miniFadeIn flex">
               <Terminal className=" miniFadeIn text-white -ml-6 scale-75" />
 
-              <div className=" miniFadeIn text-Mute  flex flex-wrap -ml-0.5">
+              <div className=" miniFadeIn text-Mute  flex flex-wrap -ml-2">
                 {p.tech.map((item, i) => (
                   <div className={"KSDAJ mx-2 relative"}>{item.label}</div>
                 ))}

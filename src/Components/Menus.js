@@ -38,7 +38,11 @@ export default function Menus(p) {
             <button
               id={index}
               href={item.link}
-              className={index == p.selectedID ? " HAQXSA HAQXSAx" : " HAQXSA "}
+              className={
+                index == p.selectedID
+                  ? "  HAQXSA   HAQXSAx dark:text-white bg-transparent"
+                  : "  HAQXSA dark:text-white bg-transparent "
+              }
               onClick={MenuSelectionHandler}
             >
               {item.label}
@@ -46,7 +50,7 @@ export default function Menus(p) {
           </div>
         ))}
       </div>
-      <div className=" mb-10">x</div>
+      <div className=" mb-10 text-transparent">{"x"}</div>
     </div>
   );
 }

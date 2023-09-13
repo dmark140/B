@@ -14,7 +14,7 @@ export default function Main() {
 
   return (
     <>
-      <div className="main mt-4">
+      <div className=" mt-4">
         <Head />
         <Menus setMenuId={setMenuId} selectedID={MenuId} />
 
