@@ -6,11 +6,13 @@ import {
   Route,
   UNSAFE_NavigationContext as NavigationContext,
 } from "react-router-dom";
+import GoogleMovies from "./GoogleMovies/GoogleMovies";
 export default function AppIndex() {
   return (
     <>
       <Routes>
         <Route path="/" element={<IMain />} />
+        <Route path="/GoogleMovies" element={<IGoogleMovies />} />
       </Routes>
     </>
   );
@@ -18,6 +20,10 @@ export default function AppIndex() {
 
 function IMain() {
   return <Main />;
+}
+
+function IGoogleMovies() {
+  return <GoogleMovies />;
 }
 /*.pie-chart {
 	background:

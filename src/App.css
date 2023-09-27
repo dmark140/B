@@ -226,3 +226,7 @@ body{
 .KJAS{
   animation:""
 }
+
+.transitionx{
+  transition: 0.5s;
+} 
