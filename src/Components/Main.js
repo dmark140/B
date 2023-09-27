@@ -5,6 +5,7 @@ import WorkExp from "./WorkExp";
 import Menus from "./Menus";
 import Footer from "./Footer";
 import Resource from "./Resource";
+import Paintmain from "./Paint/Paintmain";
 
 export default function Main() {
   const [MenuId, setMenuId] = useState("0");
@@ -14,7 +15,9 @@ export default function Main() {
 
   return (
     <>
-      <div className=" mt-4">
+      <div className=" ">
+        <Paintmain />
+        <div className="my-2 pb-10"></div>
         <Head />
         <Menus setMenuId={setMenuId} selectedID={MenuId} />
 

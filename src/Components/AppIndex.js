@@ -7,12 +7,14 @@ import {
   UNSAFE_NavigationContext as NavigationContext,
 } from "react-router-dom";
 import GoogleMovies from "./GoogleMovies/GoogleMovies";
+import Paintmain from "./Paint/Paintmain";
 export default function AppIndex() {
   return (
     <>
       <Routes>
         <Route path="/" element={<IMain />} />
         <Route path="/GoogleMovies" element={<IGoogleMovies />} />
+        <Route path="/paint" element={<IPaintmain />} />
       </Routes>
     </>
   );
@@ -25,6 +27,11 @@ function IMain() {
 function IGoogleMovies() {
   return <GoogleMovies />;
 }
+
+function IPaintmain() {
+  return <Paintmain />;
+}
+
 /*.pie-chart {
 	background:
 		radial-gradient(

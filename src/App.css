@@ -230,3 +230,14 @@ body{
 .transitionx{
   transition: 0.5s;
 } 
+
+.gridx{
+  grid-template-columns: repeat(23, minmax(0, 1fr));
+}
+ 
+
+  .XASAF{
+      transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms;
+  }
