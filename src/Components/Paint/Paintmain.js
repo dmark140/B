@@ -26,6 +26,11 @@ export default function Paintmain() {
       alldc[i].classList.add(`text-white`);
       alldc[i].classList.add(`dark:text-black`);
     }
+    alldc = document.getElementsByTagName("button");
+    for (let i = 0; i < alldc.length - 1; i++) {
+      alldc[i].classList.add(`text-white`);
+      alldc[i].classList.add(`dark:text-black`);
+    }
   }, []);
 
   const [boxes, setboxes] = useState([]);
@@ -104,7 +109,7 @@ export default function Paintmain() {
           <React.Fragment key={ind}>
             <div className={i.col == Time && "bg-white   XASAF"}>
               <div
-                className={`w-5 h-5 p-0.4 mx-auto  rounded-md text-black bg-green-500`}
+                className={`w-4 h-4 p-0.4 mx-auto  rounded-md text-black bg-green-500`}
                 style={{
                   background: colorList[i.color],
                 }}
@@ -116,10 +121,10 @@ export default function Paintmain() {
         ))}
       </div>
       <div className="flex gap-x-2">
-        <button className="px-2 rounded-md  bg-gray-800 " onClick={Clear}>
+        <button className="px-2 rounded-md " onClick={Clear}>
           Clear
         </button>
-        <button className="px-2 rounded-md  bg-gray-800 " onClick={IRandomize}>
+        <button className="px-2 rounded-md " onClick={IRandomize}>
           Randomize
         </button>
       </div>
