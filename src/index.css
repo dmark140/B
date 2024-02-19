@@ -15,3 +15,9 @@
     url("./Fonts/Minecraft.ttf") format("TrueType");
   /* font-weight: bold; */
 }
+@font-face {
+  font-family: "Pacifico";
+  src: local("Pacifico"),
+    url("./Fonts/Pacifico-Regular.ttf") format("TrueType");
+  /* font-weight: bold; */
+}

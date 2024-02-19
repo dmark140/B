@@ -8,20 +8,29 @@ import {
 } from "react-router-dom";
 import GoogleMovies from "./GoogleMovies/GoogleMovies";
 import Paintmain from "./Paint/Paintmain";
+import LandPageHome from "./LandingPage/LandPageHome";
 export default function AppIndex() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<IMain />} />
-        <Route path="/GoogleMovies" element={<IGoogleMovies />} />
-        <Route path="/paint" element={<IPaintmain />} />
+        <Route path="/" element={<ILandingPage />} /> 
       </Routes>
     </>
   );
 }
 
+
+  {/* <Route path="/" element={<IMain />} />
+        <Route path="/GoogleMovies" element={<IGoogleMovies />} />
+        <Route path="/paint" element={<IPaintmain />} /> */}
+
+
+
 function IMain() {
   return <Main />;
+}
+function ILandingPage() {
+  return <LandPageHome />;
 }
 
 function IGoogleMovies() {
