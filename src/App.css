@@ -7,3 +7,76 @@
 .profile{
   object-fit: "cover";
 }
+*{
+  /* transition: 0.5s; */
+}
+/* :root{
+  /* background-color: #fff; 
+} */
+
+.scaleUpCenter:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.scaleUpCenter:not(:hover) {
+  -webkit-animation: scalteUps 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: scalteUps 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes scalteUps {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scalteUps {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.XAAXX {
+  color: #e9c03a;
+}.VASCA {
+  border-color:  #e9c03a;
+}
+
+.PRHP{
+  line-height: 1rem;
+}

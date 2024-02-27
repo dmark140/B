@@ -13,18 +13,17 @@ export default function AppIndex() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<ILandingPage />} /> 
+        <Route path="/iresume" element={<ILandingPage />} />
       </Routes>
     </>
   );
 }
 
-
-  {/* <Route path="/" element={<IMain />} />
+{
+  /* <Route path="/" element={<IMain />} />
         <Route path="/GoogleMovies" element={<IGoogleMovies />} />
-        <Route path="/paint" element={<IPaintmain />} /> */}
-
-
+        <Route path="/paint" element={<IPaintmain />} /> */
+}
 
 function IMain() {
   return <Main />;
