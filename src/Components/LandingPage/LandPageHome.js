@@ -3,6 +3,7 @@ import CardLanding from "./CardLanding";
 import ProfileMain from "../GoogleMovies/Profile/ProfileMain";
 import MenuBar from "../MenuBar/MenuBar";
 import Feed from "../Feed/Feed";
+import About from "../About/About";
 
 export default function LandPageHome() {
   const [ActiveBar, setActiveBar] = useState(0);
@@ -18,6 +19,7 @@ export default function LandPageHome() {
         {/* Menu Bar */}
         <MenuBar setActiveBar={setActiveBar} ActiveBar={ActiveBar} />
         {ActiveBar == 0 && <Feed />}
+        {ActiveBar == 1 && <About />}
 
         {/* Profile */}
         {/* Some Icon with link */}
