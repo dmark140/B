@@ -53,7 +53,7 @@ export const Shades = () => {
         viewBox="0 0 640 208"
         enable-background="new 0 0 640 208"
         xmlSpace="preserve"
-        className="absolute w-[160px] top-[110px] left-{p.size}"
+        className="absolute w-[160px] top-[110px] left-[50px]"
       >
         <path
           fill="#000000"

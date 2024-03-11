@@ -97,18 +97,18 @@ export default function Skills() {
   ];
   return (
     <>
-      <div>
-        <h1 className="font-semibold text-2xl pb-4 mt-10 TITLE ">Tech Stack</h1>
+      <div id="Skills" className="pb-10">
+      <h1 className="font-sans font-bold text-4xl TITLE  pb-5 ">Tech Stack</h1>
         <div className="flex flex-wrap gap-2">
           {skills.map((e, i) => (
             <div
               key={i}
-              className="   XALAC  flex border-[2px]  dark:border-black bg-white    text-sm   px-2  rounded-md shadow-sm font-semibold "
+              className="   XALAC  flex    bg-[#eff0f14e]  dark:bg-[#eff0f1]    text-sm   px-2   rounded-md shadow-sm font-semibold "
             >
               <div className="  mr-2 ">
                 <e.icon size="24px" className="" />
               </div>
-              <div className="text-black ">{e.label}</div>
+              <div className="text-white dark:text-black ">{e.label}</div>
             </div>
           ))}
         </div>
