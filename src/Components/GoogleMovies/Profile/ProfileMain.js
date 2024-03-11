@@ -16,12 +16,12 @@ export default function ProfileMain() {
       icon: BusinessCenterRounded,
     },
 
-    {
-      label: "/Links",
-      icon: LinkRounded,
-      ClassNameText: "XAAXX font-bold",
-      ClassNameIcon: "-rotate-45",
-    },
+    // {
+    //   label: "/Links",
+    //   icon: LinkRounded,
+    //   ClassNameText: "XAAXX font-bold",
+    //   ClassNameIcon: "-rotate-45",
+    // },
 
     {
       label: "August 13th",
@@ -33,24 +33,24 @@ export default function ProfileMain() {
     },
   ];
   return (
-    <div className="dark:text-black text-white">
+    <div className="dark:text-black text-white  ">
       <div className="w-full h-[200px] bg-[#f0eded3f] -mb-8">
         {/* wallapaper */}
       </div>
       <div className="px-4">
-        <div className=" max-w-[90px] max-h-[90px] bg-[#c3c3c3]  rounded-full  border-white border-4">
+        <div className=" max-w-[120px] max-h-[120px] min-w-[120px] min-h-[120px] bg-[#c3c3c3]  rounded-full  border-white border-4">
           <img
             src="https://avatars.githubusercontent.com/u/14121234?s=400&u=c4ff30b44d17298cd8a0fded6258b505007fa891&"
             className="rounded-full "
           />
         </div>
-        <div className="font-bold text-3xl ">Deanmark Famoleras</div>
-        <div>Brings concepts into reality with coding! ✨</div>
+        <div className="font-bold text-4xl font-sans mt-2 ">Deanmark Famoleras</div>
+        <div className="mt-2">Brings concepts into reality with coding! ✨</div>
         <div className="mt-1 leading-4">
           Systems Administrator | Sap B1 Developer | Mentor | Thinks out of the
           box .
         </div>
-        <div className="mt-2 flex -ml-2 gap-2">
+        <div className="my-6 flex -ml-2 gap-2">
           {links.map((e, i) => (
             <div
               key={i}

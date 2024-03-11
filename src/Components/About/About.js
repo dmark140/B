@@ -7,11 +7,9 @@ import BB from "./BB";
 export default function About() {
   return (
     <div className="dark:text-black text-white ">
-      <br />
-      <b> Oi! Kamusta!</b> <br />
-      <br />
-      Thank you for having the time to visit my Domain <br />
-      <br />
+      
+       <div className="text-3xl mb-2 font-bold">Kamusta! 👋</div>
+      {/* Thank you for having the time to visit my Domain <br /> */}
       <b>Dean</b> Here, Currently the Systems administrator of{" "}
       <a
         target="_blank"

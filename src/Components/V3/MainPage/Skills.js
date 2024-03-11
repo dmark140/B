@@ -1,14 +1,14 @@
 import React from "react";
-import { ReactIcon, SAPIcon } from "../../Components";
+import { IconNPM,IconGit, ReactIcon, SAPicon, IconTailwind, SAPSQL, SAPExpress } from "../../Components";
 
 export default function Skills() {
   const skills = [
     {
-      label: "React",
+      label: "ReactJs",
       icon: ReactIcon,
     },
     {
-      label: "Node.js",
+      label: "NodeJs",
       icon: ReactIcon,
     },
     {
@@ -16,46 +16,73 @@ export default function Skills() {
       icon: ReactIcon,
     },
     {
+      label: "TailWind",
+      icon: IconTailwind,
+    },    {
       label: "MSSQL",
-      icon: ReactIcon,
+      icon: SAPSQL,
     },
     {
       label: "SAP B1",
-      icon: SAPIcon,
+      icon: SAPicon,
     },
     {
       label: "SAP B1 Service Layer",
-      icon: SAPIcon,
+      icon: SAPicon,
     },
     {
       label: "SAP B1 SDK",
-      icon: SAPIcon,
+      icon: SAPicon,
     },
     {
       label: "Crystal Report",
-      icon: SAPIcon,
+      icon: SAPicon,
     },
-    {
-      label: "Tailwind",
-      icon: ReactIcon,
-    },
+  
+  ];
+
+  const Tools = [
+    {label: "ERP"},
+    {label: "Project Management"},
+    {label: "System Management"},
+
   ];
   return (
-    <div>
-      <h1 className="font-semibold text-2xl pb-1 mt-10 TITLE">Tech Stack</h1>
+   <>
+     <div>
+      <h1 className="font-semibold text-2xl pb-4 mt-10 TITLE ">Tech Stack</h1>
       <div className="flex flex-wrap gap-2">
         {skills.map((e, i) => (
           <div
             key={i}
+            className="   XALAC  flex border-[2px]  dark:border-black bg-white    text-sm   px-2  rounded-md shadow-sm font-semibold "
+          >
+            <div className="  dark:invert-0 mr-2 ">
+              <e.icon size="24px" className=""/>
+            </div>
+              <div className="text-black ">
+                 {e.label}
+              </div>
+          </div>
+        ))}
+      </div>
+      {/* <APIpng/> */}
+    </div>
+    {/* <div>
+      <h1 className="font-semibold text-2xl pb-1 mt-10 TITLE">Experties</h1>
+      <div className="flex flex-wrap gap-2">
+        {Tools.map((e, i) => (
+          <div
+            key={i}
             className="flex border w-fit px-2 py-1 rounded-md shadow-sm font-semibold"
           >
-            {/* <div className="mt-1 mr-1">
-              <e.icon className="mt-1" />
-            </div> */}
             {e.label}
           </div>
         ))}
       </div>
-    </div>
+    </div> */}
+   </>
+
+
   );
 }

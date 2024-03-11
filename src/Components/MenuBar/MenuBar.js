@@ -8,19 +8,19 @@ export default function MenuBar(p) {
     },
     {
       id: 1,
-      label: "About",
+      label: "About Me",
     },
     {
       id: 2,
-      label: "Content",
+      label: "Hire Me",
     },
     {
       id: 3,
-      label: "GuestBook",
+      label: "Links",
     },
   ];
   return (
-    <div className="mt-4">
+    <div className="mt-4 mb-10">
       <div className="dark:text-black text-white flex">
         {Menus.map((e, i) => (
           <div
@@ -34,8 +34,8 @@ export default function MenuBar(p) {
               id={i}
               className={
                 p.ActiveBar == i
-                  ? "border-b-[5px] VASCA w-fit px-2 py-1  mx-auto"
-                  : "border-b-[5px] border-transparent w-fit px-2 py-1  mx-auto"
+                  ? "border-b-[5px] VASCA w-fit  py-1  mx-auto"
+                  : "border-b-[5px] border-transparent w-fit  py-1  mx-auto"
               }
             >
               {e.label}

@@ -81,4 +81,94 @@
   line-height: 1rem;
 }
 
- 
+.AXASV {
+    clip-path: polygon(
+      0px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px 100%,
+      calc(100% - 4px) 100%,
+      calc(100% - 4px) calc(100% - 4px),
+      100% calc(100% - 4px),
+      100% 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 0px,
+      4px 0px,
+      4px 4px,
+      0px 4px
+    );
+}
+
+.ASCENT{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.AXAA{
+  max-width: 710px
+}
+
+
+
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 10px),
+    5px calc(100% - 10px),
+    5px calc(100% - 5px),
+    10px calc(100% - 5px),
+    10px 100%,
+    calc(100% - 10px) 100%,
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 10px),
+    100% calc(100% - 10px),
+    100% 10px,
+    calc(100% - 5px) 10px,
+    calc(100% - 5px) 5px,
+    calc(100% - 10px) 5px,
+    calc(100% - 10px) 0px,
+    10px 0px,
+    10px 5px,
+    5px 5px,
+    5px 10px,
+    0px 10px);
+  position: relative;
+}
+.pixel-corners {
+  border: 5px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(5px 10px,
+    10px 10px,
+    10px 5px,
+    calc(100% - 10px) 5px,
+    calc(100% - 10px) 10px,
+    calc(100% - 5px) 10px,
+    calc(100% - 5px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 5px),
+    10px calc(100% - 5px),
+    10px calc(100% - 10px),
+    5px calc(100% - 10px));
+}
+.XALAC  {
+  clip-path: polygon(
+    0px calc(100% - 3px),
+    3px calc(100% - 3px),
+    3px 100%,
+    calc(100% - 3px) 100%,
+    calc(100% - 3px) calc(100% - 3px),
+    100% calc(100% - 3px),
+    100% 3px,
+    calc(100% - 3px) 3px,
+    calc(100% - 3px) 0px,
+    3px 0px,
+    3px 3px,
+    0px 3px
+  );
+}

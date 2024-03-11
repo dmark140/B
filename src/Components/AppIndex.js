@@ -10,13 +10,17 @@ import GoogleMovies from "./GoogleMovies/GoogleMovies";
 import Paintmain from "./Paint/Paintmain";
 import LandPageHome from "./LandingPage/LandPageHome";
 import MainPage from "./V3/MainPage/MainPage";
+import HireMeA from "./V3/HireMe/HireMeA";
+import LinksA from "./V3/Links/LinksA";
 export default function AppIndex() {
   return (
     <>
       <Routes>
         {/* <Route path="/iresume" element={<ILandingPage />} /> */}
-        <Route path="/iresumev2" element={<IMainv2 />} />
-        <Route path="/iresumev" element={<IMain />} />
+        {/* <Route path="/iresumev2" element={<IMainv2 />} /> */}
+        <Route path="/About" element={<About />} />
+        <Route path="/HireMe" element={<HireMe />} />
+        <Route path="/Links" element={<Links />} />
       </Routes>
     </>
   );
@@ -31,9 +35,17 @@ export default function AppIndex() {
 function IMain() {
   return <Main />;
 }
-function IMainv2() {
-  return <MainPage />;
-}
+function About() {
+	return <MainPage />;
+  }
+
+  function HireMe() {
+	return <HireMeA />;
+  }
+  function Links() {
+	// return <LinksA />;
+	return <Main />;
+  }
 function ILandingPage() {
   return <LandPageHome />;
 }

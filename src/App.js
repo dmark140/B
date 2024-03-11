@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import AppIndex from "./Components/AppIndex";
-import "@fontsource/homemade-apple"; // Defaults to weight 400
+// import "@fontsource/homemade-apple"; // Defaults to weight 400
 import {
   DarkMode,
   LightMode,
@@ -12,7 +12,7 @@ import DeanSvg from "./Components/DeanSvg";
 import { DefMenus } from "./Components/Components";
 
 function App() {
-  const [isDarkMode, setisDarkMode] = useState(true);
+  const [isDarkMode, setisDarkMode] = useState(false);
   const [darkMode, setDarkMode] = useState("black");
   document.body.style = `background: ${darkMode}; `;
   const changeMode = (e) => {
@@ -47,15 +47,15 @@ function App() {
     );
   };
   return (
-    <div id="kmskd" className="-m-0 -p-0 max-w-[710px] mx-auto">
-      <div className="bg-black dark:bg-white fixed w-full ">
-        <div className="relative justify-between   max-w-[710px]    ">
+    <div id="kmskd" className="-m-0 -p-0 AXAA mx-auto">
+      <div className="bg-black dark:bg-white   w-full ">
+        <div className="relative justify-between   AXAA    ">
           {/* <div className="w-14 ">
             <DeanSvg isDark={isDarkMode} />
           </div> */}
 
           <button
-            className="absolute -top-[10px] right-0 dark:text-black text-white mt-2  mr-2"
+            className="absolute -top-[0px] right-0 dark:text-black text-white   mr-2"
             onClick={changeMode}
           >
             <UI_Mode />

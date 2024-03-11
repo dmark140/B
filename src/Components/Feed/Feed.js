@@ -24,7 +24,7 @@ export default function Feed() {
     <div className="mt-4 ">
       <div className="dark:text-black text-white ">
         {feedList.map((e, i) => (
-          <div className="hover:bg-[#ffffff2a] p-4 flex" key={i}>
+          <div className="hover:bg-[#ffffff0f] p-4 flex" key={i}>
             <div className=" max-w-[40px] max-h-[40px] bg-[#c3c3c3]  rounded-full ">
               <img
                 src="https://avatars.githubusercontent.com/u/14121234?s=400&u=c4ff30b44d17298cd8a0fded6258b505007fa891&"
@@ -34,11 +34,11 @@ export default function Feed() {
             <div className="ml-2">
               <div className="font-semibold text-sm">
                 Dean ⚡ •
-                <span className="text-[#ffffff9c] dark:text-[#0000009c] ml-2">
+                <span className="text-[#ffffff9c] dark:text-[#0000005e] ml-2">
                   {e.date}
                 </span>
               </div>
-              <div className="rounded-full bg-[#ffffff5e] w-fit px-2 text-sm font-semibold my-2">
+              <div className="rounded-full bg-[#ffffff37] w-fit px-2 text-sm font-semibold my-2">
                 {e.feeling}
               </div>
               <div className="font-bold text-xl">{e.heading}</div>
