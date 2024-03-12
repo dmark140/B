@@ -3,8 +3,13 @@ import profilex from "../../DeanPixelP.png";
 import { DefButton, Shades } from "../../Components";
 import { AdsClick } from "@mui/icons-material";
 import { ClickAwayListener } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function Landing() {
+  const nav = useNavigate();
+  const useNavex = (e) => {
+    nav("/Resume");
+  };
   const [showShades, setshowShades] = useState(false);
   return (
     <div
@@ -78,8 +83,13 @@ export default function Landing() {
       </div>
       <div className="w-full">
         <div className="gap-2 flex mt-10 mx-auto w-fit">
-          <DefButton label="Download CV" />
-          <DefButton label="Contact Me" />
+          <DefButton label="Download CV" onClick={useNavex} />
+          <a
+            href="#contact"
+            className="rounded-md p-2 px-2.5 text-black dark:text-white dark:bg-black bg-white AXASV "
+          >
+            Contact Me
+          </a>
         </div>
       </div>
     </div>

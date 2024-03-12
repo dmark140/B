@@ -20,6 +20,7 @@ import {
   PsIcon,
   UnityIcon,
   BlenderIcon,
+  Netlify,
 } from "../../Components";
 
 export default function Skills() {
@@ -87,6 +88,10 @@ export default function Skills() {
     {
       label: "Belnder",
       icon: BlenderIcon,
+    },
+    {
+      label: "Netlify",
+      icon: Netlify,
     },
   ];
 

@@ -19,7 +19,7 @@ export default function AppIndex() {
       <Routes>
         {/* <Route path="/iresume" element={<ILandingPage />} /> */}
         {/* <Route path="/iresumev2" element={<IMainv2 />} /> */}
-        <Route path="/" element={<About />} />
+        <Route path="/About" element={<About />} />
         <Route path="/HireMe" element={<HireMe />} />
         <Route path="/Links" element={<Links />} />
         <Route path="/Resume" element={<Resume />} />

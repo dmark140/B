@@ -20,6 +20,7 @@ import {
   PsIcon,
   UnityIcon,
   BlenderIcon,
+  Netlify,
 } from "../../Components";
 
 export default function Skills() {
@@ -88,6 +89,10 @@ export default function Skills() {
       label: "Belnder",
       icon: BlenderIcon,
     },
+    {
+      label: "Netlify",
+      icon: Netlify,
+    },
   ];
 
   const Tools = [
@@ -98,7 +103,9 @@ export default function Skills() {
   return (
     <>
       <div id="Skills" className="pb-10">
-      <h1 className="font-sans font-bold text-4xl TITLE  pb-5 ">Tech Stack</h1>
+        <h1 className="font-sans font-bold text-4xl TITLE  pb-5 ">
+          Tech Stack
+        </h1>
         <div className="flex flex-wrap gap-2">
           {skills.map((e, i) => (
             <div

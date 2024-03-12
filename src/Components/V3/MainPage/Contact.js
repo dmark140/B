@@ -27,7 +27,9 @@ export default function Contact() {
   ];
   return (
     <div>
-      <h1 className="font-sans font-bold text-4xl TITLE  pb-5 ">Contact</h1>
+      <h1 id="contact" className="font-sans font-bold text-4xl TITLE  pb-5 ">
+        Contact
+      </h1>
 
       <div className="md:flex md:justify-between ">
         {ListOfContact.map((e, i) => (
