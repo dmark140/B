@@ -12,7 +12,7 @@ import DeanSvg from "./Components/DeanSvg";
 import { DefMenus } from "./Components/Components";
 
 function App() {
-  const [isDarkMode, setisDarkMode] = useState(false);
+  const [isDarkMode, setisDarkMode] = useState(true);
   const [darkMode, setDarkMode] = useState("black");
   document.body.style = `background: ${darkMode}; `;
   const changeMode = (e) => {

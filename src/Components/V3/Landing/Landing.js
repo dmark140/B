@@ -7,11 +7,17 @@ import { ClickAwayListener } from "@mui/material";
 export default function Landing() {
   const [showShades, setshowShades] = useState(false);
   return (
-    <div className="dark:text-black text-white ">
+    <div
+      id="start"
+      className="dark:text-black text-white scale-[0.75] sm:scale-100 "
+    >
       <div>
         <div className="flex w-[512px] mx-auto">
           <div className="max-w-[413px] mt-4">
-            <h1 className="font-sans font-bold text-5xl TITLE  "> Hello, I’m Deanmark Famoleras</h1>
+            <h1 className="font-sans font-bold text-5xl TITLE  ">
+              {" "}
+              Hello, I’m Deanmark Famoleras
+            </h1>
             {/* <h1 className=" font-sans font-semibold text-2xl mt-8 TITLE">
               Hello, I’m Deanmark Famoleras
             </h1> */}
@@ -29,10 +35,12 @@ export default function Landing() {
             awesome company here at Valenzuela city manila, I’m an all around
             programmer handling things from planning to production
             <br /> */}
-          <div className=" font-semibold mt-2 pt-2 text-xl pb-2">
-          Experienced <span className="font-bold">full-stack developer</span> specializing  in <span className="font-bold">back-end development</span>
-          </div>
-           
+            <div className=" font-semibold mt-2 pt-2 text-xl pb-2">
+              Experienced{" "}
+              <span className="font-bold">full-stack developer</span>{" "}
+              specializing in{" "}
+              <span className="font-bold">back-end development</span>
+            </div>
           </div>
 
           <div
@@ -54,20 +62,26 @@ export default function Landing() {
               </>
             )}
             <div className="mx-auto w-fit pr-4 text-sm italic ">
-              {!showShades ? <>
-                <span>make me cool! <span className="not-italic">😎</span></span><span className="text-xs -mt-1 w-fit mx-2">click me</span> 
-              </> : " you rock!"}
+              {!showShades ? (
+                <>
+                  <span>
+                    make me cool! <span className="not-italic">😎</span>
+                  </span>
+                  <span className="text-xs -mt-1 w-fit mx-2">click me</span>
+                </>
+              ) : (
+                " you rock!"
+              )}
             </div>
           </div>
         </div>
       </div>
       <div className="w-full">
-
-      <div className="gap-2 flex mt-10 mx-auto w-fit">
-              <DefButton label="Download CV"/>
-              <DefButton label="Contact Me"/>
-              </div>
-            </div>
+        <div className="gap-2 flex mt-10 mx-auto w-fit">
+          <DefButton label="Download CV" />
+          <DefButton label="Contact Me" />
+        </div>
+      </div>
     </div>
   );
 }

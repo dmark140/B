@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Landing from "../Landing/Landing"; 
+import Landing from "../Landing/Landing";
 import { useNavigate } from "react-router-dom";
 import { DefButton, DefMenus, ReactIcon, SAPIcon } from "../../Components";
 import {
@@ -26,7 +26,8 @@ export default function MainPage() {
       name: "",
       label: "",
       icon: House,
-    }, {
+    },
+    {
       name: "Hire Me",
       label: "Hire Me",
       icon: Work,
@@ -37,13 +38,12 @@ export default function MainPage() {
       icon: Work,
     },
   ];
-const [SelectedMenu, setSelectedMenu] = useState(0);
-// useEffect(() => {
-// // if(SelectedMenu == 0) nav("/About")
-// if(SelectedMenu == 1) nav("/HireMe")
-// if(SelectedMenu == 2) nav("/Links")
-// }, [SelectedMenu])
-
+  const [SelectedMenu, setSelectedMenu] = useState(0);
+  // useEffect(() => {
+  // // if(SelectedMenu == 0) nav("/About")
+  // if(SelectedMenu == 1) nav("/HireMe")
+  // if(SelectedMenu == 2) nav("/Links")
+  // }, [SelectedMenu])
 
   return (
     <div className="dark:text-black text-white px-2 ">
@@ -56,27 +56,31 @@ const [SelectedMenu, setSelectedMenu] = useState(0);
       </div> */}
       <br />
       <div className="h-[100vh] relative">
-        <div className="ASCENT w-fit " id="#landing">
+        <div className="ASCENT w-fit" id="#landing">
           <Landing />
         </div>
       </div>
-      <About/>
-      <br/>
-       <Skills />
-       <br/>
-       <br/>
-      <Timeline /> 
-      <br/>
-      <br/>
-      <Education/>
-      <br/>
-      <br/>
-      <br/>
-      <Contact/>
-      <br/>
-
-      <Footer/>
-    {/* <div className="border-dashed border-b-2 dark:border-black my-10"></div> */}
+      <div className="">
+        <div className="my-20">
+          <About />
+        </div>
+        <div className="my-20">
+          <Skills />
+        </div>
+        <div className="my-20">
+          <Timeline />
+        </div>
+        <div className="my-20">
+          <Education />
+        </div>
+        <div className="my-20">
+          <Contact />
+        </div>
+        <div className="mt-20">
+          <Footer />
+        </div>
+      </div>
+      {/* <div className="border-dashed border-b-2 dark:border-black my-10"></div> */}
     </div>
   );
 }
