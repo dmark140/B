@@ -174,35 +174,28 @@ export default function Timeline() {
   ];
   return (
     <div id="Experience">
-      <h1 className="font-sans font-bold text-4xl TITLE  pb-5 ">Experience</h1>
+      <h1 className="font-sans font-bold text-2xl TITLE  ">Experience</h1>
       {TimeLine.map((e, i) => (
         <>
-          <div className="flex w-full p-2 rounded-lg XALAC hover:bg-opacity-10 dark:hover:bg-opacity-10 hover:bg-white dark:hover:bg-black ">
-            <div className="w-40 text-center">{e.date}</div>
+          <div className=" border-b-2 flex w-full p-2 rounded-lg XALAC hover:bg-opacity-10 dark:hover:bg-opacity-10 hover:bg-white dark:hover:bg-black ">
+            <div className="relative">
+              {/* <div className="  bg-gray-600 w-4 h-4 text-transparent rounded-xl mt-1 mr-2 "></div> */}
+              <div className=" border-dashed border-r-4 h-full w-full  absolute right-[13.8px]"></div>
+            </div>
             <div className="w-full">
-              <div className="font-semibold border-b   pb-2">{e.title}</div>
-              <div className="border-l-2 border-dashed border-gray-500 -ml-[60px] pl-[60px]">
+              <div className="font-semibold  relative">{e.title}</div>
+              <div className=" border-gray-500  ">
                 <p className="italic text-xs mt-2 ">{e.location}</p>
+                <p className="italic text-xs  font-bold">{e.date}</p>
                 <p className="text-sm mt-2">{e.details}</p>
-                <div className="my-2">
-                  {e.activities.length > 0 && (
-                    <p className="text-sm mt-2 font-semibold">Activities</p>
-                  )}
 
-                  {e.activities.map((eee, iii) => (
-                    <div className="flex gap-2">
-                      <div>•</div>
-                      <div className="text-sm">{eee.label}</div>
-                    </div>
-                  ))}
-                </div>
                 <div className="flex ">
                   <Code className="scale-[0.8] mt-0.5 mr-2" />
                   <div className="flex flex-wrap gap-x-2 gap-y-1 mt-2">
                     {e.tech.map((ee, ii) => (
                       <>
                         <div className=" flex  gap-2 justify-center px-1  text-xs dark:bg-gray-50  bg-gray-700  rounded-md border">
-                          <ee.icon size="15px" />
+                          {/* <ee.icon size="15px" /> */}
                           {ee.label}
                         </div>
                       </>

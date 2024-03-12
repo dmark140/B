@@ -12,6 +12,7 @@ import LandPageHome from "./LandingPage/LandPageHome";
 import MainPage from "./V3/MainPage/MainPage";
 import HireMeA from "./V3/HireMe/HireMeA";
 import LinksA from "./V3/Links/LinksA";
+import Resumee from "./Resume/Resumee";
 export default function AppIndex() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function AppIndex() {
         <Route path="/About" element={<About />} />
         <Route path="/HireMe" element={<HireMe />} />
         <Route path="/Links" element={<Links />} />
+        <Route path="/Resume" element={<Resume />} />
       </Routes>
     </>
   );
@@ -36,16 +38,19 @@ function IMain() {
   return <Main />;
 }
 function About() {
-	return <MainPage />;
-  }
+  return <MainPage />;
+}
 
-  function HireMe() {
-	return <HireMeA />;
-  }
-  function Links() {
-	// return <LinksA />;
-	return <Main />;
-  }
+function HireMe() {
+  return <HireMeA />;
+}
+function Resume() {
+  return <Resumee />;
+}
+function Links() {
+  // return <LinksA />;
+  return <Main />;
+}
 function ILandingPage() {
   return <LandPageHome />;
 }

@@ -1,12 +1,7 @@
 import React from "react";
 import profilex from "../../DeanPixelP.png";
-import { useNavigate, useNavigation } from "react-router-dom";
 
 export default function Footer() {
-  const nav = useNavigate();
-  const useNavex = (e) => {
-    nav("/Resume");
-  };
   return (
     <div className="AXAA mx-auto sm:justify-between sm:flex my-4 border-t-2 py-4 ">
       <div className=" flex flex-wrap">
@@ -22,34 +17,40 @@ export default function Footer() {
       </div>
       <div className="sm:flex gap-2 ml-[50px]">
         <div>
+          {" "}
           <a className="hover:underline" href="#start">
             Start
-          </a>
+          </a>{" "}
         </div>
         <div>
+          {" "}
           <a className="hover:underline" href="#about">
             About
-          </a>
+          </a>{" "}
         </div>
         <div>
+          {" "}
           <a className="hover:underline" href="#Skills">
             Skills
-          </a>
+          </a>{" "}
         </div>
         <div>
+          {" "}
           <a className="hover:underline" href="#Experience">
             Experience
-          </a>
+          </a>{" "}
         </div>
         <div>
+          {" "}
           <a className="hover:underline" href="#education">
             Education
-          </a>
+          </a>{" "}
         </div>
         <div>
-          <button className="hover:underline" onClick={useNavex}>
+          {" "}
+          <a className="hover:underline" href="#education">
             Resume
-          </button>
+          </a>{" "}
         </div>
       </div>
     </div>

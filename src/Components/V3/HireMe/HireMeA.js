@@ -3,50 +3,75 @@ import Landing from "../Landing/Landing";
 import { useNavigate } from "react-router-dom";
 import { DefMenus } from "../../Components";
 import {
+  EmailOutlined,
+  Facebook,
+  GitHub,
+  LocationCity,
+  LocationDisabled,
+  LocationSearching,
+  PinDrop,
+  PinDropOutlined,
   Verified,
   Work,
 } from "@mui/icons-material";
+import Education from "./Education";
+import Timeline from "./Timeline";
+import Skills from "./Skills";
 
 export default function HireMeA() {
-  const nav = useNavigate();
-  const menus = [
+  const dets = [
     {
-      name: "About",
-      label: "About",
-      icon: Verified,
-    }, {
-      name: "Hire Me",
-      label: "Hire Me",
-      icon: Work,
+      label: "MalintaValenzuela, Metro Manila",
+      icon: PinDropOutlined,
+      link: "",
     },
     {
-      name: "Links",
-      label: "Links",
-      icon: Work,
+      label: "Famolerasd@gmail.com",
+      icon: EmailOutlined,
+      link: "",
+    },
+    {
+      label: "/dmark140",
+      icon: GitHub,
+      link: "https://github.com/dmark140",
+    },
+    {
+      label: "/Dean Mark",
+      icon: Facebook,
+      link: "https://www.facebook.com/profile.php?id=100088412763050",
     },
   ];
-  const [SelectedMenu, setSelectedMenu] = useState(1);
-useEffect(() => {
-  if(SelectedMenu == 0) nav("/About")
-//   if(SelectedMenu == 1) nav("/HireMe")
-  if(SelectedMenu == 2) nav("/Links")
-}, [SelectedMenu])
-
-
   return (
     <div className="dark:text-black text-white px-2 ">
-      <div className="mt-2">
-        <DefMenus
-          menus={menus}
-          SelectedMenu={SelectedMenu}
-          setSelectedMenu={setSelectedMenu}
-        />
+      <div>
+        <div className="font-bold text-3xl font-sans mt-2 ">
+          DEANMARK FAMOLERAS
+        </div>
+
+        <div className="font-bold text-xl font-sans  -mt-1 opacity-[0.6] ">
+          SYSTEMS ADMIN / FULL-STACK DEVELOPER
+        </div>
       </div>
-      <br />
-      <div className="mt-[166px]"></div>
-      <h1 className="font-sans font-bold text-5xl TITLE  ">Let's work <br/> together</h1>
-      
-    <div className="border-dashed border-b-2 dark:border-black my-10"></div>
+      <div className="flex   mt-10">
+        <div>
+          <Timeline />
+          <div className="mt-10"></div>
+          {dets.map((e, i) => (
+            <>
+              <div className="flex text-sm gap-2 mx-4">
+                <e.icon />
+                <a href={e.link}>{e.label}</a>
+              </div>
+            </>
+          ))}
+        </div>
+
+        <div className="ml-4 min-w-[280px] max-w-[280px]">
+          <Education />
+          <br />
+          <Skills />
+        </div>
+      </div>
     </div>
   );
 }

@@ -40,7 +40,7 @@ export default function WorkExp() {
       title: "Jr. Programmer | Database Administrator",
       compLink: "https://www.innovativepkg.com.ph/",
       comp: "Innovative packaging ind. corp. | CDO",
-      disc: "Collaborates with Lead Branch Programmer,Developed, maintained and dispached producction code on In-house applicatiion.",
+      disc: "Collaborates with Lead Branch Programmer,Developed, maintained and dispatched production  code on In-house application.",
       tech: [{ label: "VB6" }, { label: "MySQL" }, { label: "PHP" }],
     },
   ];
