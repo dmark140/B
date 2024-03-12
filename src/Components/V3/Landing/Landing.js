@@ -41,9 +41,9 @@ export default function Landing() {
             programmer handling things from planning to production
             <br /> */}
             <div className=" font-semibold mt-2 pt-2 text-xl pb-2">
-              Experienced{" "}
+              Experienced
               <span className="font-bold">full-stack developer</span>{" "}
-              specializing in{" "}
+              specializing in
               <span className="font-bold">back-end development</span>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Landing() {
       </div>
       <div className="w-full">
         <div className="gap-2 flex mt-10 mx-auto w-fit">
-          <DefButton label="Download CV" onClick={useNavex} />
+          <DefButton label="Download  CV" onClick={useNavex} />
           <a
             href="#contact"
             className="rounded-md p-2 px-2.5 text-black dark:text-white dark:bg-black bg-white AXASV "
