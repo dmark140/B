@@ -1,5 +1,5 @@
 import React from "react";
-import iResume from "./DeanR.pdf";
+import iResume from "./DeanDev.pdf";
 export default function Resumee() {
   return (
     <div>

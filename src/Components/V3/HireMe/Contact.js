@@ -1,4 +1,4 @@
-import { LinkedIn } from "@mui/icons-material";
+import { LinkedIn, Numbers } from "@mui/icons-material";
 import React from "react";
 import { FacebookIcon, LinkedInIcon, WebInIcon } from "../../Components";
 
@@ -22,6 +22,12 @@ export default function Contact() {
       label: "Send Me an Email",
       icon: WebInIcon,
       linkLabel: "famolerasd@gmail.com",
+      link: "#",
+    },
+    {
+      label: "Contact me (Globe)",
+      icon: Numbers,
+      linkLabel: "09555667279",
       link: "#",
     },
   ];

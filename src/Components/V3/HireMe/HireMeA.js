@@ -9,6 +9,7 @@ import {
   LocationCity,
   LocationDisabled,
   LocationSearching,
+  Numbers,
   PinDrop,
   PinDropOutlined,
   Verified,
@@ -39,6 +40,11 @@ export default function HireMeA() {
       label: "/Dean Mark",
       icon: Facebook,
       link: "https://www.facebook.com/profile.php?id=100088412763050",
+    },
+    {
+      label: "+639555667279 Globe",
+      icon: Numbers,
+      link: "#",
     },
   ];
   return (
