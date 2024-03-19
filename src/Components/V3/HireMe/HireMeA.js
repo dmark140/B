@@ -13,6 +13,7 @@ import {
   PinDrop,
   PinDropOutlined,
   Verified,
+  Web,
   Work,
 } from "@mui/icons-material";
 import Education from "./Education";
@@ -45,6 +46,11 @@ export default function HireMeA() {
       label: "+639555667279 Globe",
       icon: Numbers,
       link: "#",
+    },
+    {
+      label: "/DeanDev",
+      icon: Web,
+      link: "https://deanmark.netlify.com/",
     },
   ];
   return (

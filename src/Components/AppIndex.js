@@ -33,7 +33,6 @@ export default function AppIndex() {
         <Route path="/GoogleMovies" element={<IGoogleMovies />} />
         <Route path="/paint" element={<IPaintmain />} /> */
 }
-
 function IMain() {
   return <Main />;
 }
